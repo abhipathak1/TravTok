@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       :root {
+    --main-color:#9ebbdc;
+    --color-dark: #040415;
+    --text-white: #fdfdfd;
+
+    }
+       *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+       } 
+       .sidebar{
+        width: 240px;
+        /* border: 1px solid red; */
+        box-shadow: rgba(138, 138, 138, 0.15) 1.5px 1.95px 2.6px;
+       }
+.sidebar-brand{
+    padding: 16px 0px 16px 32px;
+    display: flex;
+    align-items: center;
+   
+}
+.sidebar-brand>img{
+ 
+    width: 40px;
+}
+.sidebar-brand>h3{
+    font-size: 40px;
+padding-left: 8px;
+}
+
+.sidebar-item{
+    padding: 6px 10px 6px 35px;
+    display: flex;
+    /* background-color: var(--main-color); */
+    align-items: center;
+    margin-bottom: 32px;
+    margin-left: 47px;
+    margin: 16px 20px 0px 20px;
+    border-radius: 22px;
+}
+   
+
+.sidebar-item img{
+    width: 26px;
+}
+.sidebar-item h3{
+    font-size: 18px;
+    padding-left: 12px;
+}
+.sidebar-item:first-child{
+    background-color: var(--main-color);
+    color: var(--text-white);
+}
+.sidebar-menu-data{
+height: 500px;
+/* border: 1px solid blue; */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <img src="./project_logo.png" alt="">
+                <h3>Travtok</h3>
+             
+        </div>
+        <div class="sidebar-menu-data">
+        <div class="sidebar-menu">
+            <div class="sidebar-item" class="active">
+                <img src="./icons/dashboard.png" class="sidebar-item-img" alt="">
+                <h3 class="sidebar-item-title">DashBoard</h3>
+            </div>
+            <div class="sidebar-item">
+                <img src="./icons/holidays.png" class="sidebar-item-img" alt="">
+                <h3 class="sidebar-item-title">Tours</h3>
+            </div>
+            <div class="sidebar-item">
+                <img src="./icons/group.png" class="sidebar-item-img" alt="">
+                <h3 class="sidebar-item-title">Users</h3>
+            </div>
+           
+        </div>
+        <div class="sidebar-item">
+            <img src="./icons/settings.png" class="sidebar-item-img" alt="">
+            <h3 class="sidebar-item-title">Settings</h3>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
