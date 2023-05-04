@@ -1,0 +1,193 @@
+body{
+    box-sizing: border-box;
+    
+}
+*{
+    margin: 0px;
+    padding:0px;
+}
+.top{
+    width: 100%;
+    margin: auto;
+   
+    background-color:rgb(243, 243, 246);
+
+    display: flex;
+    justify-content: space-between;
+}
+.top>.link{
+  width: 30%;
+ 
+ display: flex;
+ 
+ 
+} 
+.top>.link>a{
+    text-shadow: 20px;
+    font-style: normal;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.top>.link>.vl{
+    border-left: 2px solid rgb(13, 14, 13);
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.hl{
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgba(14, 15, 14, 0.938);
+
+    
+}
+.data{
+    width: 100%;
+    
+    margin: auto;
+   
+   
+}
+.data>.container{
+    
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  
+}  
+#card_list{
+    width: 100%;
+    display: block;
+    
+    
+   
+}
+#card{
+
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    background-color:rgb(243, 243, 246);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    justify-content: space-around;
+    
+}
+#card2{
+  
+    width: 40%;
+    padding: 30px;
+    
+   justify-items: center;
+   text-align: center;
+    
+    
+}
+#name{
+    margin-bottom: 10px;
+    font-family: 'Island Moments', cursive;
+    color: black;
+    text-shadow: 2px 2px 5px rgb(234, 34, 34);
+    font-size: 45px;
+    
+}
+#description{
+    margin-bottom: 10px;
+    font-family: 'Supermercado One', cursive;
+    font-size: 20px;
+    text-align:center;
+}
+#Ages{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#location{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#time{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+#price{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 35px;
+    color: black;
+    text-shadow: 2px 2px 5px rgb(234, 34, 34);
+}
+
+#div{
+    justify-content: space-between;
+}
+#button{
+    color: rgb(5, 5, 5);
+    font-family: 'Condiment', cursive;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 7px;
+    text-shadow: 2px 2px 5px rgb(137, 76, 229);
+     border: none;
+    
+    margin-right: 200px;
+    border-radius: 10px;
+   
+    background-color:rgb(243, 243, 246);
+
+    
+}
+#ancer{
+    color: black;
+    margin-top: 10px;
+    text-decoration: none;
+    font-family:'Condiment', cursive;
+    text-shadow: 2px 2px 5px rgb(137, 76, 229);
+    font-size: 30px;
+} 
+#images{
+    width: 40%;
+   
+    
+}
+#images img{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+#images img:hover{
+    transform: scaleX(-1);
+}
+
+.button2{
+padding: 10px; 
+border: none;
+margin-right: 50px;
+margin-top: 30px; 
+color: rgb(26, 25, 25);
+border-radius: 15px; 
+text-align: center;
+font-size: 15px;
+text-shadow: 2px 2px 5px rgb(137, 76, 229);
+background-color:rgb(243, 243, 246);
+
+
+
+}
+.button3{
+    padding: 10px; 
+    border: none;
+    margin-right: 50px;
+    margin-top: 30px; 
+    color: rgb(26, 25, 25);
+    border-radius: 15px; 
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 2px 2px 5px rgb(137, 76, 229);
+    background-color:rgb(243, 243, 246);
+}
