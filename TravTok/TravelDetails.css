@@ -1,0 +1,444 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+#MainDiv {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid grey;
+    background-color: rgb(238, 238, 238);
+
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    color: #000;
+    padding: 0 50px;
+
+}
+
+
+.logo {
+    display: flex;
+    gap: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 3.5px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.logo img {
+    margin-top: 17px;
+    height: 35px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-bottom: 4px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+.menu a:hover {
+    border-bottom-color: #000;
+}
+
+
+/* main body starts here  */
+#main {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main hr {
+    margin-left: 0px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    left: 0;
+    /* border:1px solid red */
+}
+
+.filters hr {
+    margin-top: 20px;
+    min-width: 400px;
+}
+
+/* price filter  */
+.pricefilter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricefilter div {
+    display: flex;
+}
+
+.pricefilter p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+}
+
+.pricefilter div button {
+    margin-top: -20px;
+    height: 40px;
+    width: 200px;
+    margin-right: 20px;
+    border: none;
+    background-color: rgb(209, 208, 208);
+    font-size: 22px;
+    border-radius: 20px;
+}
+
+.pricefilter div button:hover {
+    background-color: aliceblue;
+    color: cornflowerblue;
+}
+
+
+/* country filter starts here  */
+.country {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+
+}
+
+.country p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.country input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: rgb(209, 208, 208);
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    align-self: center;
+    margin-top: -10px;
+}
+
+.country input:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.plan div {
+    max-width: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.plan input {
+    margin-top: -10px;
+}
+
+.plan div p {
+    font-size: 16px;
+    margin-top: -20px;
+}
+
+
+
+/* mainSearch */
+
+.mainSearch {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mainSearch input {
+    width: 88%;
+    height: 40px;
+    border: none;
+    background-color: rgb(209, 208, 208);
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    align-self: center;
+    margin-top: -10px;
+}
+
+.mainSearch input:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+
+/* display dom part  */
+.card_list {
+    display: flex;
+
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    min-width: 900px;
+    margin-left: 20px;
+}
+
+
+.images img {
+    min-width: 399px;
+    max-width: 400px;
+    min-height: 280px;
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.images img:hover {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 0px;
+    color: rgb(0, 0, 0);
+}
+
+
+.location {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+
+.price {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.Time {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.description {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: -15px;
+    text-align: justify;
+}
+
+.card {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+#Information {
+    padding-right: 10px;
+}
+
+
+#Information #button {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: rgb(209, 208, 208);
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+#Information #button:hover {
+    background-color: aliceblue;
+    color: cornflowerblue;
+}
+
+
+/* filterbySeason */
+.flitering {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.flitering p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+}
+
+.flitering div button {
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    margin-right: 20px;
+    border: none;
+    background-color: rgb(209, 208, 208);
+    font-size: 22px;
+    border-radius: 20px;
+}
+
+.flitering div button:hover {
+    background-color: aliceblue;
+    color: cornflowerblue;
+}
+
+.pagination button {
+    margin-top: 20px;
+    height: 40px;
+    width: 80px;
+    margin-right: 20px;
+    border: none;
+    font-size: 22px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: grey;
+}
+
+.products .pagination {
+    width: 60%;
+    margin: auto;
+}
+
+
+/* footer */
+
+#mid-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 76px;
+    margin-right: 76px;
+}
+
+#mid-footer img {
+    height: 30px;
+    margin-top: 40PX;
+    margin-right: 10px;
+}
+
+
+#main-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+
+#icons {
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+
+#icons img {
+    padding-left: 1px;
+}
+
+#footer-search input {
+    width: 200px;
+    height: 45px;
+    padding: 14px;
+    border: none;
+    border-bottom: 1px solid rgb(113, 188, 228);
+    font-size: 14px;
+}
+
+#footer p {
+    color: black;
+    letter-spacing: 1px;
+}
+
+#main-footer #footer-btn {
+    width: 100px;
+    height: 45px;
+    color: black;
+    border: none;
+    background-color: rgb(113, 188, 228);;
+    font-size: 14px;
+}
+
+#main-footer img {
+    width: 20px;
+}
+
+#main-footer p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.3pc;
+}
+
+#main-footer h3 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 3.5px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+}
+
+
+#main-footer #footer-btn2 {
+    width: 150px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #7ba1cd;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#main-footer #footer-btn2:hover {
+    background-color: #3a77be;
+}
