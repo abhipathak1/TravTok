@@ -85,7 +85,10 @@ loginButton.addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
       const loggedInUser = data.find(u => u.email === user.email && u.password === user.password);
-      if (loggedInUser) {
+      if(user.email==="admin1"&&user.password==="naughty"||user.email==="anshu@gmail.com"&&user.password==="anshu"||user.email==="abhay@gmail.com"&&user.password==="abhay"||user.email==="vamsi@gmail.com"&&user.password==="vamsi"||user.email==="rutik@gmail.com"&&user.password==="rutik"){
+        window.location.href="./admin.html"
+      }
+     else if (loggedInUser) {
         console.log('Login successful!', loggedInUser);
 		window.location.href = "/"
         localStorage.setItem('user', JSON.stringify(loggedInUser));
