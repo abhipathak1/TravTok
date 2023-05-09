@@ -87,7 +87,7 @@
 /* first-Menu */
 
 
-.TravelDetailsRedirection{
+.TravelDetailsRedirection {
     cursor: pointer;
 }
 
@@ -437,4 +437,34 @@
 
 #main-footer #footer-btn2:hover {
     background-color: #3a77be;
+}
+
+
+
+
+/* back-to-top button */
+
+#back-to-topbtn img {
+    width: 30px;
+}
+
+#back-to-topbtn {
+    position: fixed;
+    bottom: 5%;
+    width: 75px;
+    right: 1%;
+    z-index: 99;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px black;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    transition: background-color 0.3s ease-out;
+}
+
+#back-to-topbtn:hover {
+    background-color: #eee;
 }

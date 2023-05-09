@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravTok</title>
+    <link rel="shortcut icon" href="/Images/ttlogo.png" type="jpeg/png">
+    
+    <link rel="stylesheet" href="/Css/adminUsers.css">
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+
+<body>
+    <div class="body">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <img src="/Images/ttlogo.png" alt="">
+                <h3>Travtok</h3>
+
+            </div>
+            <div class="sidebar-menu-data">
+                <div class="sidebar-menu">
+                    <div class="sidebar-item" id="DashBoard">
+                        <img src="/Images/icons/dashboard1.png" class="sidebar-item-img" alt="">
+                        <h3 class="sidebar-item-title">DashBoard</h3>
+                    </div>
+                    <div class="sidebar-item" id="Tours">
+                        <img src="/Images/icons/holidays.png" class="sidebar-item-img" alt="">
+                        <h3 class="sidebar-item-title">Tours</h3>
+                    </div>
+                    <div class="sidebar-item active" id="Users">
+                        <img src="/Images/icons/group.png" class="sidebar-item-img" alt="">
+                        <h3 class="sidebar-item-title">Users</h3>
+                    </div>
+
+                </div>
+                <div class="sidebar-item">
+                    <img src="/Images/icons/settings.png" class="sidebar-item-img" alt="">
+                    <h3 class="sidebar-item-title">Settings</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-content" style="background-color: var(--main-color);">
+            <header id="secondHeader">
+                <div>
+                    <h2>DashBoard</h2>
+                </div>
+                <div> <input type="text" placeholder="search here...."></div>
+                <div> <img src="/Images/admin.png" alt="">
+                    <h3>Admin</h3>
+                </div>
+            </header>
+            <div class="bottom-content">
+                <h2>Total Users </h2>
+                <p>Plan your dream vacation effortlessly with our user-friendly travel website.</p>
+                <table width="80%">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+                <div class="pagination-wrapper" id="pagination-wrapper"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/889a8c6bdf.js" crossorigin="anonymous"></script>
+<script src="/Java Script/adminUsers.js"></script>
+
+</html>

@@ -37,6 +37,7 @@ signupButton.addEventListener('click', () => {
 
 
 
+
   fetch('https://64521317bce0b0a0f73bef09.mockapi.io/Users', {
     method: 'POST',
     headers: {
@@ -49,10 +50,12 @@ signupButton.addEventListener('click', () => {
       // Save the new user object to local storage
       localStorage.setItem('user', JSON.stringify(data));
       console.log('User saved to local storage:', data);
-      alert('SignUp successful');
+      alert('SignUp Successful');
+      location.reload()
     })
     .catch(error => console.error('Error creating user:', error));
 });
+
 
 // Add a click event listener to the login button
 const loginButton = document.querySelector('.logbtn');
@@ -68,10 +71,10 @@ loginButton.addEventListener('click', () => {
       const loggedInUser = data.find(u => u.email === user.email && u.password === user.password);
 
       if (user.email === "admin1" && user.password === "naughty") {
-        window.location.href = "./admin.html";
+        location.href = "admin.html";
       } else if (loggedInUser) {
         console.log('Login successful!', loggedInUser);
-        window.location.href = "./index.html";
+        window.location.href = "/index.html";
         localStorage.setItem('user', JSON.stringify(loggedInUser));
       } else {
         alert('Invalid email or password');
@@ -79,3 +82,48 @@ loginButton.addEventListener('click', () => {
     })
     .catch(error => console.error('Error logging in:', error));
 })
+
+
+// for Appending The logo
+
+const travtok = document.getElementById("travtok");
+const text = "TravTok";
+let currentIndex = 0;
+
+function appendNextLetter() {
+  if (currentIndex < text.length) {
+    const nextLetter = text[currentIndex];
+    const span = document.createElement("span");
+    span.textContent = nextLetter;
+    travtok.appendChild(span);
+
+    span.getBoundingClientRect();
+    span.style.opacity = "1";
+    currentIndex++;
+    setTimeout(appendNextLetter, 800); // Adjust the delay (in milliseconds) between each letter
+  }
+}
+appendNextLetter();
+
+// indexRedirection
+travtok.addEventListener("click", () => {
+  location.href = "/index.html";
+})
+
+// EyeButtonInInput
+
+let toggle = document.querySelector("#aajaDekhle");
+let input = document.querySelector(".password");
+
+toggle.addEventListener("click", () => {
+  if (input.type === "password") {
+    input.type = "text";
+    document.getElementById('passwordIcon').classList.remove('fa-eye');
+    document.getElementById('passwordIcon').classList.add('fa-eye-slash');
+  } else {
+    input.type = "password";
+    document.getElementById('passwordIcon').classList.remove('fa-eye-slash');
+    document.getElementById('passwordIcon').classList.add('fa-eye');
+  }
+});
+

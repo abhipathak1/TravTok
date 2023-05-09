@@ -70,23 +70,38 @@ const autoSlide = () => {
 setTimeout(() => autoSlide(), 3000);
 
 
+// ToptobottomPart
+
+var backToTopBtn = document.querySelector("#back-to-topbtn");
+
+window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 100) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+});
+
+backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
 
 // TravelDetailsRedirection
-
 
 let travelDetailsRedirection = document.getElementsByClassName("TravelDetailsRedirection");
 for (let i = 0; i < travelDetailsRedirection.length; i++) {
     travelDetailsRedirection[i].addEventListener("click", () => {
-        location.href = "TravelDetails.html";
+        location.href = "Html/TravelDetails.html";
     });
 }
 
 // login_SignUpRedirection
 
-let login_SignUpRedirection=document.getElementById("login_SignUpRedirection");
-login_SignUpRedirection.addEventListener("click" ,() => {
-    location.href = "login_SignUp.html";
+let login_SignUpRedirection = document.getElementById("login_SignUpRedirection");
+login_SignUpRedirection.addEventListener("click", () => {
+    location.href = "Html/login_SignUp.html";
 })
-
-
-

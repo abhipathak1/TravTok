@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravTok</title>
-    <link rel="shortcut icon" href="./ttlogo.png" type="jpeg/png">
+    <link rel="shortcut icon" href="/Images/ttlogo.png" type="jpeg/png">
 </head>
 
 <link rel="stylesheet" href="/Css/TravelDetails.css">
@@ -16,15 +16,15 @@
     <div id="MainDiv">
         <div class="navbar">
             <div class="logo">
-                <h1 id="indexRedirection">TravTok</h1>
-                <img src="/ttlogo.png" alt="">
+                <h1 class="indexRedirection">TravTok</h1>
+                <img src="/Images/ttlogo.png" alt="">
             </div>
             <div class="menu">
-                <a href="#">About Us</a>
-                <a href="#">Contact Us <i class="fa-solid fa-phone fa-flip"></i></a>
-                <a href="#">Catalog</a>
+                <a href="#" class="hide">About Us</a>
+                <a href="#" class="hide">Contact Us <i class="fa-solid fa-phone fa-flip"></i></a>
+                <a href="#" class="indexRedirection">Home <i class="fa-solid fa-house" style="color: black;"></i> </a>
                 <p style="font-size: xx-large;">|</p>
-                <a href="#"  id="login_SignUpRedirection"><span style="color: rgb(105, 139, 164);">Sign Up</span></a>
+                <a href="#" id="login_SignUpRedirection"><span style="color: rgb(105, 139, 164);">Sign Up</span></a>
             </div>
         </div>
     </div>
@@ -55,10 +55,22 @@
                     <button id="button6">Daily</button>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="products">
+            <button id="resetFilter">Reset</button>
 
+
+            <!-- <div class="video-container">
+                <video
+                    src="https://cdn.dribbble.com/users/59947/screenshots/16454864/media/b2916efbb8d58796a243268ee0448828.mp4"
+                     autoplay loop>
+                    Your browser does not support the video tag.
+                </video>
+            </div> -->
+        </div>
+
+
+        <!-- <hr> -->
+        <div class="products">
+            <button class="filterButtons"><i class="fa-solid fa-bars-staggered"></i></button>
             <div class="mainSearch">
                 <input type="text" id="country" placeholder="Search Place" required class="inputtext">
             </div>
@@ -70,6 +82,38 @@
             <div class="pagination">
                 <!-- append pagination btns  -->
             </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fa-solid fa-xmark fa-fade"></i></span>
+            <h3>Travel Details</h3>
+            <table>
+                <thead class="card1">
+                    <td>
+                        <h4>Name</h4>
+                    </td>
+                    <td>
+                        <h4>No of person</h4>
+                    </td>
+                    
+                </thead>
+                <tbody class="cards">
+                    <!-- append -->
+                </tbody>
+                
+                <tfoot>
+                    <td>
+                        <h4>Total</h4>
+                    </td>
+                    
+                    <td>
+                        <h4 class="b"></h4>
+                    </td>
+                </tfoot>
+            </table>
+            <button class="bt3">Pay Now</button>
         </div>
     </div>
 
@@ -110,7 +154,6 @@
         <div>
             <div style="display: flex; gap: 8px;">
                 <h3>Travtok</h3>
-                <img style="height: 35px; width: 35px;" src="./ttlogo.png" alt="">
             </div>
             <p>Seoul is a vibrant city that seamlessly blends traditional <br> Korean culture with modern technology.
                 From exploring <br> the historic Gyeongbokgung Palace to shopping in trendy <br> neighborhoods like
@@ -155,6 +198,12 @@
             </div>
         </div>
     </div>
+
+    <!-- backToTopButton -->
+
+    <button id="back-to-topbtn">
+        <img src="https://cdn-icons-png.flaticon.com/128/2381/2381848.png">
+    </button>
 
 </body>
 <script src="https://kit.fontawesome.com/30a5a51570.js" crossorigin="anonymous"></script>

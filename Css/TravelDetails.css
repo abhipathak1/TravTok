@@ -3,6 +3,16 @@ body {
     padding: 0px;
 }
 
+button{
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+button:hover{
+    transform: scale3d(1.1, 1.1, 1);
+
+}
+
 
 
 #MainDiv {
@@ -84,8 +94,12 @@ body {
     text-align: center;
     max-width: 500px;
     left: 0;
-    /* border:1px solid red */
+    display: none;
+    transition: opacity 0.3s ease-in-out;
 }
+
+
+
 
 .filters hr {
     margin-top: 20px;
@@ -179,6 +193,55 @@ body {
 }
 
 
+/* .video-container {
+    position: absolute;
+    left: 0;
+    margin-top: 250px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.video-container video {
+    max-width: 550px;
+
+} */
+
+/* filterButtons */
+
+.filterButtons {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    top: 35px;
+    margin-left: 10px;
+}
+
+.filterButtons i {
+    display: block;
+    font-size: 30px;
+}
+
+#resetFilter {
+    height: 40px;
+    width: 100px;
+    border: none;
+    /* background-color: rgb(235, 43, 17); */
+    /* background-image: linear-gradient(to bottom, rgb(235, 43, 17), #916b6b); */
+    border: 2px solid red;
+    color: #f02f2f;
+    font-size: 22px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#resetFilter:hover {
+    background-image: linear-gradient(to bottom, rgb(235, 43, 17), #916b6b);
+    color: #fff;
+    border: none;
+
+}
 
 /* mainSearch */
 
@@ -450,4 +513,194 @@ body {
 
 #main-footer #footer-btn2:hover {
     background-color: #3a77be;
+}
+
+
+
+
+
+
+/* back-to-top button */
+
+#back-to-topbtn img {
+    width: 30px;
+}
+
+#back-to-topbtn {
+    position: fixed;
+    bottom: 5%;
+    width: 75px;
+    right: 1%;
+    z-index: 99;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px black;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    transition: background-color 0.3s ease-out;
+}
+
+#back-to-topbtn:hover {
+    background-color: #eee;
+}
+
+
+
+/* BooknowDiv */
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 15% auto;
+    padding: 20px;
+    max-width: 400px;
+    width: 80%;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+
+tfoot h4 {
+    font-size: 20px;
+}
+
+table h4 {
+    font-size: 20px;
+}
+
+
+
+/* Button */
+.bt3 {
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: rgb(158, 186, 220);
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 40px;
+   
+    
+}
+
+.bt3:hover {
+    background-color: aliceblue;
+    color: cornflowerblue;
+}
+
+
+.close {
+    color: #aa1818;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.BooknowDivtitle {
+    font-size: 20px;
+}
+
+.q {
+    font-size: 20px;
+}
+
+.increment {
+    margin-left: 10px;
+    width: 25px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #7ba1cd;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.decrement {
+    margin-right: 10px;
+    width: 25px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #7ba1cd;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.decrement:hover{
+    background-color: aliceblue;
+    color: cornflowerblue;
+}
+
+.increment:hover{
+    background-color: aliceblue;
+    color: cornflowerblue;
+}
+/* Responsive */
+
+/* 
+@media only screen and (max-width: 900px) and (min-width: 1200px){
+    
+} */
+
+
+@media only screen and (max-width: 768px) {
+    .hide {
+        display: none;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    #Information {
+        text-align: justify;
+        width: 400px;
+    }
+
+    .container {
+        width: 500px;
+    }
+
+    #main-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

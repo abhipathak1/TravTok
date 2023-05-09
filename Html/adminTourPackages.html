@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravTok</title>
+    <link rel="shortcut icon" href="/Images/ttlogo.png" type="jpeg/png">
+    <link rel="stylesheet" href="/Css/adminTousPackages.css">
+    <style>
+        .middle-content {
+            margin-top: 32px;
+            padding: 24px 30px 24px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            border-radius: 10px;
+            background-color: var(--text-white);
+        }
+
+        .middle-content p {
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .middle-content button {
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            border: none;
+            background-color: #00c691;
+            color: var(--text-white);
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            font-size: 24px;
+
+        }
+
+        .edit-content {
+            margin-top: 32px;
+            padding: 24px 30px 24px 16px;
+
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+            border-radius: 10px;
+            background-color: var(--text-white);
+        }
+
+/* pop csss****************** */
+
+
+
+
+
+
+
+
+/* Styles for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+  }
+
+/* Styles for the modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 16px;
+    border: 1px solid #888;
+    /* height: 580px; */
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* Styles for the form inputs */
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: -10px;
+  /* margin-bottom: 5px; */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="link"],
+textarea {
+    width: 100%;
+    padding: 8px;
+   
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+  display: block;
+  margin: auto;
+}
+
+/* Styles for the close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+#edit-submit{
+    background-color: #4CAF50;
+  color: white;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+#edit-submit:hover {
+  background-color: #45a049;
+  display: block;
+  margin: auto;
+}
+    </style>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
+
+<body>
+    <div class="body">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <img src="/Images/ttlogo.png" alt="">
+                <h3>Travtok</h3>
+
+            </div>
+            <div class="sidebar-menu-data">
+                <div class="sidebar-menu">
+                    <div class="sidebar-item" id="DashBoard">
+                        <img src="/Images/icons/dashboard1.png" class="sidebar-item-img" alt="">
+                        <h3 class="sidebar-item-title">DashBoard</h3>
+                    </div>
+                    <div class="sidebar-item active" id="Tours">
+                        <img src="/Images/icons/holidays.png" class="sidebar-item-img" alt="">
+                        <h3 class="sidebar-item-title">Tours</h3>
+                    </div>
+                    <div class="sidebar-item" id="Users">
+                        <img src="/Images/icons/group.png" class="sidebar-item-img" alt="">
+                        <h3 class="sidebar-item-title">Users</h3>
+                    </div>
+
+                </div>
+                <div class="sidebar-item">
+                    <img src="/Images/icons/settings.png" class="sidebar-item-img" alt="">
+                    <h3 class="sidebar-item-title">Settings</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-content" style="background-color: var(--main-color);">
+            <header id="secondHeader">
+                <div>
+                    <h2 onclick="">DashBoard</h2>
+                </div>
+                <div> <input type="text" placeholder="search here...."></div>
+                <div> <img src="/Images/admin.png" alt="">
+                    <h3>Admin</h3>
+                </div>
+            </header>
+            <div class="middle-content">
+                <div>
+                    <h3>Add New Package</h3>
+                    <p>Make memories that last a lifetime with our handpicked selection of travel experiences.</p>
+                </div>
+                <div>
+
+                    <button id="Tours-Add-btn">+</button>
+                </div>
+
+            </div>
+
+
+            <!-- creating pop for adding product -->
+
+
+            <div id="add-product-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <!-- Add your form inputs for adding a product here -->
+                    <label for="product-id">ID:</label>
+                    <input type="number" id="product-id" name="product-id" required><br><br>
+                    <label for="product-title">Tilte:</label>
+                    <input type="text" id="product-title" name="product-title" required><br><br>
+                    <label for="product-image">Image:</label>
+                    <input type="link" id="product-image" name="product-image" required><br><br>
+                    <label for="product-location">Location:</label>
+                    <input type="text" id="product-location" name="product-location" required><br><br>
+                    <label for="product-description">Description:</label>
+                    <input type="text" id="product-description" name="product-description" required><br><br>
+                    <label for="product-open">Open:</label>
+                    <input type="text" id="product-open" name="product-open" required><br><br>
+                    <label for="product-price">Price:</label>
+                    <input type="number" id="product-price" name="product-price" required><br><br>
+                    <input type="submit" id="product-submit" value="Add New Package">
+                </div>
+            </div>
+
+
+            <!-- ************************** -->
+
+
+            <!-- The Edit Price pop -->
+<div id="edit-price-modal" class="modal">
+    <div class="modal-content">
+      <span class="edit-close close">&times;</span>
+      <form id="edit-price-form">
+        <label for="product-price-input">Price:</label>
+        <input type="number" id="product-price-input" name="product-price-input" required><br><br>
+        <button type="submit" id="edit-submit" >Update Price</button>
+      </form>
+    </div>
+  </div>
+<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  -->
+
+
+            
+
+
+
+            <div class="bottom-content">
+                <h2>All Packages</h2>
+                <p>Plan your dream vacation effortlessly with our user-friendly travel website.</p>
+                <table width="80%">
+                    <thead>
+                        <tr>
+
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Location</th>
+                            <th>Open</th>
+                            <th>Price</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+                <div class="pagination-wrapper" id="pagination-wrapper"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/889a8c6bdf.js" crossorigin="anonymous"></script>
+<script src="/Java Script/adminTourPackages.js"></script>
+
+</html>

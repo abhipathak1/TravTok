@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+    --main-color: #f0f5fb;
+    --color-dark: #040415;
+    --text-white: #fdfdfd;
+
+}
+
+body {
+    background-color: var(--main-color);
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Instrument Serif', serif;
+    font-size: 21px;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: var(--text-white);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.sidebar-brand {
+    padding: 16px 0px 16px 32px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-brand>img {
+    height: 35px;
+}
+
+.sidebar-brand>h3 {
+    font-size: 30px;
+    padding-left: 8px;
+}
+
+.sidebar-item {
+    padding: 6px 10px 6px 35px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-left: 47px;
+    margin: 16px 20px 0px 20px;
+    border-radius: 22px;
+    transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+.sidebar-item:hover{
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+
+
+.sidebar-item img {
+    width: 24px;
+}
+
+.sidebar-item h3 {
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+.sidebar-item:first-child {
+    background-color: #01d9a0;
+    color: var(--text-white);
+}
+
+.sidebar-menu-data {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+/* *****************main-content***********  */
+.body {
+    display: flex;
+
+
+}
+
+.main-content {
+    margin-left: 15px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    width: 100%;
+    margin-right: 15px;
+}
+
+#secondHeader {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    height: 50px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 40px;
+    /* background-color: var(--text-white); */
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#secondHeader>div>img {
+    width: 29px;
+    margin-right: 5px;
+}
+
+#secondHeader>div:last-child {
+    display: flex;
+    align-items: center;
+
+}
+
+#secondHeader>div>input {
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid var(--color-dark);
+    padding: 0px 20px;
+    margin-right: 50px;
+}
+
+.main-middle-content {
+    border-radius: 8px;
+    margin-top: 32px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 180px;
+    gap: 10%;
+    padding: 16px 22px 0px 23px;
+    background-color: var(--text-white);
+}
+
+.main-middle-content>div>p {
+    line-height: 1.9;
+}
+
+.main-middle-content>div>img {
+    width: 170%;
+    margin-top: -30%;
+    margin-left: 100px;
+}
+
+
+/* middle boxs** */
+.for_design {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 5%);
+    grid-template-rows: 40px;
+    gap: 15%;
+}
+
+.for_design>div {
+    border-radius: 12px;
+    background-color: var(--text-white);
+    border: none;
+}
+
+.middle-boxs {
+    margin-top: -18px;
+    display: grid;
+    grid-template-columns: repeat(4, 15%);
+    grid-template-rows: 90px;
+    gap: 5%;
+}
+
+.middle-boxs>.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: var(--text-white);
+    border: none;
+}
+
+.box>p {
+    font-size: 12px;
+}
+
+.box>div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box>div>div {
+    padding: 0px 2px;
+    background-color: #cdf8ec;
+    border-radius: 10px;
+}
+
+
+/*  *********** CSS for table*********** */
+.bottom-content {
+    margin-top: 20px;
+    padding: 24px;
+    background-color: var(--text-white);
+}
+
+.bottom-content h2,
+p {
+    margin-bottom: 16px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+}
+
+thead th {
+    font-weight: 600;
+    padding: 6px 6px;
+    text-align: start;
+}
+
+td {
+    padding: 6px 6px;
+    font-size: 14px;
+    color: var(--color-dark);
+}
+
+tbody td:last-child>div {
+    padding: 0px;
+    font-weight: bold;
+    color: #03af81;
+}
+
+.bottom-content {
+    line-height: 1.2;
+}

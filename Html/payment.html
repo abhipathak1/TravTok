@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravTok</title>
+    <link rel="shortcut icon" href="/Images/ttlogo.png" type="jpeg/png">
+
+</head>
+
+<link rel="stylesheet" href="/Css/payment.css">
+
+<body>
+    <div class="cont">
+        <h1>Payment Information</h1>
+        <form>
+            <div class="form-group">
+                <label for="name-on-card">Name on Card</label>
+                <input type="text" id="name-on-card" name="name-on-card" placeholder="Enter the name on your card"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required
+                    minlength="12" maxlength="12">
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="date" id="expiry-date" name="expiry-date" placeholder="MM / YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter your CVV" required minlength="3"
+                    maxlength="3">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required minlength="10"
+                    maxlength="10">
+            </div>
+            <button id="Pay" type="submit" class="btn">Proceed to Pay</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <button id="generate-otp-btn" class="btn">Get OTP</button>
+        <div id="otp-section" class="otp-section">
+            <p class="otp-instruction">Enter the OTP below:</p>
+            <div class="otp-inputs">
+                <input type="text" id="otp-input-1" class="otp-input" maxlength="1">
+                <input type="text" id="otp-input-2" class="otp-input" maxlength="1">
+                <input type="text" id="otp-input-3" class="otp-input" maxlength="1">
+                <input type="text" id="otp-input-4" class="otp-input" maxlength="1">
+                <input type="text" id="otp-input-5" class="otp-input" maxlength="1">
+                <input type="text" id="otp-input-6" class="otp-input" maxlength="1">
+            </div>
+            <button id="verify-otp-btn" class="btn">Verify OTP</button>
+        </div>
+    </div>
+</body>
+
+<script src="/Java Script/Payment.js"></script>
+
+</html>

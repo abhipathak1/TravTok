@@ -4,15 +4,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>TravTok login/signup</title>
-	<link rel="shortcut icon" href="./ttlogo.png" type="jpeg/png">
+	<title>TravTok</title>
+    <link rel="shortcut icon" href="/Images/ttlogo.png" type="jpeg/png">
 </head>
 <link rel="stylesheet" href="/Css/login_SignUp.css">
 
 
+
+<!-- first-Font -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+
+
+
+
 <body>
 	<header>
-		<h1 class="heading">TravTok</h1>
+		<h1 class="heading" id="travtok"></h1>
 	</header>
 
 	<!-- container div -->
@@ -32,8 +43,9 @@
 
 			<!-- login form -->
 			<div class="login-box">
-				<input type="email" class="email ele" placeholder="youremail@email.com">
-				<input type="password" class="password ele" placeholder="password">
+				<input type="email" class="email ele" placeholder="youremail@email.com" required>
+				<input type="password" class="password ele" spellcheck="false" placeholder="password" required>
+				<button id="aajaDekhle"><i id="passwordIcon" class="fa-solid fa-eye"></i></button>
 				<button class="logbtn">Login</button>
 			</div>
 
@@ -48,7 +60,9 @@
 		</div>
 	</div>
 	<div class="message"></div>
-	<script src="/Java Script/login_SignUp.js"></script>
 </body>
+<script src="https://kit.fontawesome.com/30a5a51570.js" crossorigin="anonymous"></script>
+<script src="/Java Script/login_SignUp.js"></script>
+
 
 </html>
