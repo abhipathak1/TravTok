@@ -7,8 +7,7 @@ website for eyesware
 
 Welcome to TravTok
 This is a collaborative Project from Masai School in the Construct Week With the 5 team members within 5 Days.
-Deployed URL 👉 https://lensmart-in.netlify.app/
-
+Deployed URL 👉 [https://645a0d7c89a0bc02dc624cf3--guileless-conkies-23f1c3.netlify.app/]
 Our Team Members
 
 Abhay Pathak (My Linkedin profile :-)
@@ -96,7 +95,7 @@ By this Project we have learned how to collaborate and communicate with team eff
 
 We also got a glimpse of using GitHub for the version control.
 
-Source Code(GitHub link):- 
+Source Code(GitHub link):- https://github.com/abhipathak1/sharp-lumber-1926
 
 Show your support
 Give a ⭐️ if you like this project!
