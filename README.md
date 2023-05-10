@@ -14,7 +14,7 @@ Deployed URL 👉 [https://645a0d7c89a0bc02dc624cf3--guileless-conkies-23f1c3.ne
 
 Our Team Members
 
-Abhay Pathak (My Linkedin profile :-)
+Abhay Pathak (My Linkedin profile :-https://www.linkedin.com/in/abhay-pathak-824070257)
 
 Rutik Jadhav (My Linkedin Profile:-)
 
