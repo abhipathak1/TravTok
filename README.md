@@ -44,22 +44,24 @@ Tools
 
 Let's Dive into What we have made
 Home Page :
+<img width="935" alt="Home" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/8cdc4781-25ab-4432-bfd5-1b0181e9db36">
 
-
-Sign-Up Page :
-
+Footer page:
+<img width="960" alt="footer" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/49acf093-0da7-450c-a20e-bfd6b25dad68">
 
 
 Login Page :
+<img width="911" alt="login" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/ed70c512-b60b-4790-a63c-5e284de4d865">
+
+Sign-Up Page :
+
+<img width="908" alt="signup" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/10f4bfaa-1349-464a-b513-aa0461dde046">
+
+
 
 Product Page :
+<img width="960" alt="productspage" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/d9d2dd0e-6008-4871-a811-b64288788f08">
 
-
-Cart Page :
-
-
-
-Checkout Page :
 
 
 Payment Page:
@@ -71,12 +73,17 @@ Payment Page:
 
 Admin Dashboard Page :
 
+<img width="943" alt="AdminHome" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/62ec491d-7f5d-482a-8db3-e635057f1426">
 
 
 Admin Add Product Page :
+<img width="950" alt="AdminTours" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/cdb61366-7d6a-4fd8-bf7e-33abb7959071">
 
 
-Admin  Prodcut Page
+Admin Users :
+
+<img width="950" alt="AdminUser" src="https://github.com/abhipathak1/sharp-lumber-1926/assets/121400752/2be611ec-0395-4fa4-9f8d-bae93afbd127">
+
 
 
 
