@@ -7,7 +7,7 @@ website for eyesware
 
 Welcome to TravTok its was user-friendly travel website.
 Discover the world's hidden gems and embark on unforgettable adventures with our travel website. Plan your dream vacation effortlessly with our user-friendly travel website.
-This is a collaborative Project from Masai School in the Construct Week With the 5 team members within 5 Days.
+This is a collaborative Project from Masai School in the Construct Week With the 3 team members within 5 Days.
 Deployed URL 👉 [https://645a0d7c89a0bc02dc624cf3--guileless-conkies-23f1c3.netlify.app/]
 
 
