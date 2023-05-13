@@ -16,7 +16,7 @@ Our Team Members
 
 Abhay Pathak (My Linkedin profile :-https://www.linkedin.com/in/abhay-pathak-824070257)
 
-Rutik Jadhav (My Linkedin Profile:-)
+Rutik Jadhav (My Linkedin Profile:-https://www.linkedin.com/in/rutik-jadhav-364070657)
 
 Vamshi Krishna Bejjarapu (My Linkedin Profile:- https://www.linkedin.com/in/vamshi-krishna-bejjarapu-559388257/)
 
